@@ -3,20 +3,16 @@
   "trailingSlash": false,
   "rewrites": [
     {
-      "source": "/",
-      "destination": "/home.html"
-    },
-    {
       "source": "/ganti-akun",
       "destination": "/ganti-akun.html"
     },
     {
       "source": "/2fa-:token",
-      "destination": "/home.html"
+      "destination": "/index.html"
     },
     {
-      "source": "/(.*)",
-      "destination": "/home.html"
+      "source": "/2fa/:token",
+      "destination": "/index.html"
     }
   ]
 }
